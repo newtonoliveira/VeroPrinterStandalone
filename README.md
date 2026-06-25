@@ -85,6 +85,10 @@ Esse nome foi mantido limpo para nao carregar nomenclatura antiga.
 
 A interface foi montada no form principal, sem criacao dinamica em runtime.
 
+Visual da tela principal:
+
+![Tela principal](./img/tela.png)
+
 Componentes principais:
 
 - `TMemo` para digitar o texto;
