@@ -1,0 +1,1 @@
+.\bin\standalone\Android\Debug\AndroidLibraries\bcnewland-release-279-20241009\AndroidManifest.xml;.\bin\standalone\Android\Debug\AndroidLibraries\positivo-printer-1.00.00\AndroidManifest.xml;.\bin\standalone\Android\Debug\AndroidLibraries\posmpapi-1.01.21-partnersRelease\AndroidManifest.xml

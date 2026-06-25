@@ -1,0 +1,2 @@
+br.com.execucao.posmp_api
+int layout activity_transacao_pagar 0x0

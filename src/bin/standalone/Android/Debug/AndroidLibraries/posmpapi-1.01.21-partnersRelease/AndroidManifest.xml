@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.execucao.posmp_api" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        tools:overrideLibrary="br.com.avatek.bc, br.com.gertec" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WEBVIEW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <queries>
+        <package android:name="br.com.firstApps" />
+        <package android:name="br.com.bin" />
+        <package android:name="br.com.bin.dx4000" />
+        <package android:name="br.com.bin.ex4000" />
+        <package android:name="br.com.bin.ex6000" />
+        <package android:name="br.com.bin.gpos780" />
+        <package android:name="br.com.bin.gpos760" />
+        <package android:name="br.com.bin.gpos720" />
+        <package android:name="br.com.bin.P2" />
+        <package android:name="br.com.bin.P2A11" />
+        <package android:name="br.com.bin.l400" />
+        <package android:name="br.com.bin.T8" />
+        <package android:name="br.com.bin.T4" />
+        <package android:name="br.com.bin.T19" />
+        <package android:name="br.com.bin.N950" />
+        <package android:name="br.com.veroStore" />
+        <package android:name="br.com.execucao.veromobile" />
+        <package android:name="br.com.execucao.veromobile.gertecG760" />
+        <package android:name="br.com.execucao.veromobile.newlandN950" />
+        <package android:name="br.com.execucao.veromobile.newlandN950K" />
+        <package android:name="br.com.execucao.veromobile.newlandN950S" />
+        <package android:name="br.com.execucao.veromobile.positivol3" />
+        <package android:name="br.com.execucao.veromobile.positivoL3A11" />
+        <package android:name="br.com.execucao.veromobile.positivoL3V4" />
+        <package android:name="br.com.execucao.veromobile.sunmiP2" />
+        <package android:name="br.com.execucao.veromobile.sunmiP2A11" />
+        <package android:name="br.com.execucao.veromobile.verifoneX990Pro" />
+        <package android:name="br.com.execucao.store" />
+        <package android:name="br.com.execucao.rede.store" />
+    </queries>
+
+    <application>
+        <receiver
+            android:name="br.com.execucao.posmp_api.store.StatisticsRequestReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="br.com.execucao.statistics.action.REQUEST_STATISTICS" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="br.com.execucao.posmp_api.store.StoreBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="br.com.marketPlace.Receivers.AppStatusReceiver.action.UPDATE_STATUS_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="br.com.execucao.posmp_api.telemetry.RemoteControlReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="br.com.execucao.telemetry.remotecontrol.action.DISPATCH_EVENT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+JavaFile=C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin\java.exe
+RClasserFile=c:\program files (x86)\embarcadero\studio\37.0\bin\Android\rclasser-1.0.1.jar

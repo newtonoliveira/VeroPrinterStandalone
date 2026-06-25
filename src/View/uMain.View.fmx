@@ -1,0 +1,139 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Vero Printer Standalone'
+  ClientHeight = 800
+  ClientWidth = 480
+  Fill.Color = xFFF4F6F8
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lytRoot: TLayout
+    Align = Client
+    Size.Width = 480.000000000000000000
+    Size.Height = 800.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rctHeader: TRectangle
+      Align = Top
+      Fill.Color = xFF1F2937
+      Size.Width = 480.000000000000000000
+      Size.Height = 122.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lblTitulo: TLabel
+        StyledSettings = []
+        Position.X = 24.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claWhite
+        Text = 'Vero Printer Standalone'
+        TabOrder = 0
+      end
+      object lblSubtitulo: TLabel
+        StyledSettings = []
+        Position.X = 24.000000000000000000
+        Position.Y = 63.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFFE5E7EB
+        Text = 
+          'Projeto Delphi independente para teste de impressao Vero por ima' +
+          'gem.'
+        TabOrder = 1
+      end
+    end
+    object rctContent: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Padding.Left = 20.000000000000000000
+      Padding.Top = 20.000000000000000000
+      Padding.Right = 20.000000000000000000
+      Padding.Bottom = 20.000000000000000000
+      Size.Width = 448.000000000000000000
+      Size.Height = 646.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFE5E7EB
+      XRadius = 16.000000000000000000
+      YRadius = 16.000000000000000000
+      object lblTexto: TLabel
+        Align = Top
+        StyledSettings = []
+        Margins.Bottom = 12.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF111827
+        Text = 'Texto para impressao'
+        TabOrder = 0
+      end
+      object memTexto: TMemo
+        Align = Client
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = []
+        TextSettings.Font.Size = 16.000000000000000000
+        Margins.Bottom = 16.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 294.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 404.000000000000000000
+        Viewport.Height = 456.000000000000000000
+      end
+      object btnImprimir: TButton
+        Align = Bottom
+        StyledSettings = []
+        Margins.Top = 16.000000000000000000
+        Margins.Bottom = 16.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 52.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Imprimir'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = btnImprimirClick
+      end
+      object lblStatusTitulo: TLabel
+        Align = Bottom
+        StyledSettings = []
+        Margins.Bottom = 8.000000000000000000
+        Size.Width = 408.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF111827
+        Text = 'Status'
+        TabOrder = 3
+      end
+      object lblStatus: TLabel
+        Align = Bottom
+        StyledSettings = []
+        Size.Width = 408.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFF374151
+        Text = 'Pronto para imprimir.'
+        TabOrder = 4
+      end
+    end
+  end
+end

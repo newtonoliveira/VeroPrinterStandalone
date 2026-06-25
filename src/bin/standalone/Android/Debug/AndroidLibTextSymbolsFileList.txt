@@ -1,0 +1,2 @@
+.\bin\standalone\Android\Debug\AndroidLibraries\bcnewland-release-279-20241009\R-prepended.txt
+.\bin\standalone\Android\Debug\AndroidLibraries\posmpapi-1.01.21-partnersRelease\R-prepended.txt
